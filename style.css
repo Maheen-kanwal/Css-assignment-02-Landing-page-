@@ -1,0 +1,327 @@
+/* =========================
+   RESET & GLOBAL
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #fff7f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ff7a00;
+}
+
+.logo span {
+    color: #111;
+}
+
+.navbar nav a {
+    margin-left: 25px;
+    color: #333;
+    font-weight: 600;
+}
+
+.navbar nav a:hover {
+    color: #ff7a00;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 8%;
+    background: linear-gradient(135deg, #ff7a00, #ff9f45);
+    color: #fff;
+}
+
+.hero-text {
+    max-width: 520px;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.hero-text span {
+    color: #111;
+    background: #fff;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+.hero-text p {
+    margin: 20px 0;
+}
+
+.buttons {
+    margin-top: 25px;
+}
+
+.btn {
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.btn.dark {
+    background: #111;
+    color: #fff;
+}
+
+.btn.green {
+    background: #fff;
+    color: #ff7a00;
+}
+
+.hero-image img {
+    width: 320px;
+}
+
+/* =========================
+   EXTRA HERO
+========================= */
+.extra-hero {
+    background: #fff;
+    text-align: center;
+    padding: 70px 10%;
+}
+
+.extra-hero h1 {
+    font-size: 36px;
+    color: #ff7a00;
+}
+
+.extra-hero button {
+    margin-top: 20px;
+    padding: 12px 26px;
+    border: none;
+    border-radius: 30px;
+    background: #ff7a00;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* =========================
+   ABOUT / STATS
+========================= */
+.about-stats {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.about-stats h1 {
+    font-size: 34px;
+    color: #ff7a00;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.stats div {
+    background: #fff;
+    padding: 25px 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.stats h2 {
+    color: #ff7a00;
+    font-size: 32px;
+}
+
+/* =========================
+   GALLERY
+========================= */
+.gallery {
+    padding: 80px 8%;
+    background: #fff;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 32px;
+    color: #ff7a00;
+    margin-bottom: 40px;
+}
+
+.hex-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.hex img {
+    width: 100%;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.hex img:hover {
+    transform: scale(1.05);
+}
+
+/* =========================
+   CONTACT
+========================= */
+.contact {
+    padding: 80px 8%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    background: #fff7f0;
+}
+
+.contact-form,
+.contact-info {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.contact-form h3,
+.contact-info h3 {
+    color: #ff7a00;
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.send-btn {
+    background: #ff7a00;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer span {
+    color: #ff7a00;
+}
+.footer{
+    background:#0b0b0b;
+    color:#e9d7d7;
+    padding:40px 60px;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.footer-box{
+    width:23%;
+}
+
+.footer-box h3{
+    margin-bottom:15px;
+    text-transform:capitalize;
+}
+
+.footer-box ul{
+    list-style:none;
+}
+
+.footer-box ul li{
+    margin-bottom:10px;
+    color:#d05151;
+    font-size:14px;
+}
+
+/* green tick */
+.footer-box ul li::before{
+    content:"✔ ";
+    color:limegreen;
+}
+
+/* remove tick from contact & social */
+.contact li::before,
+.social li::before{
+    content:"";
+}
+
+.footer-bottom{
+    border-top:1px solid #333;
+    margin-top:30px;
+    padding-top:15px;
+    text-align:center;
+    font-size:14px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        margin-top: 40px;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+}
